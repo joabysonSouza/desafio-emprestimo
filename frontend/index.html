@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="d-flex justify-content-center">Faça seu emprestimo</h1>
+    <main class="h-100 w-100">
+
+      <section class="h-100 ">
+        <form class="row ml-3 p-5" method="post" id="loanForm">
+          <div class="col">
+            <label><h4>Seu nome:</h4></label>
+            <input
+              type="text"
+              class="w-75 rounded border-0 p-1"
+              required
+              id="inputNome"
+              name="Nome"
+              placeholder="Digite seu nome"
+            />
+          </div>
+
+          <div class="col-6">
+            <label><h4>sua idade:</h4></label>
+            <input
+              type="number"
+              class="w-20 border-0 p-1"
+              required
+              id="inputIdade"
+              name="inputIdade"
+              placeholder="Digite sua idade"
+            />
+          </div>
+
+          <div class="col-6">
+            <label><h4>Seu salario atual:</h4></label>
+            <input
+              type="number"
+              class="w-50 mt-2 border-0 p-1"
+              id="inputSalario"
+              name="inputSalario"
+              required
+              placeholder="100000"
+            />
+          </div>
+
+          <div class="col-6 mt-2">
+            <label for=""><h4>Selecione seu estado</h4></label>
+              <select  id="inputEstado" name="inputEstado">
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+          </div>
+
+          <div class=" w-100 d-flex justify-content-center align-items-center mt-5">
+            <button id="button" type="submit" class="btn btn-primary" >
+              consultar
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
+
